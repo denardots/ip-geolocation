@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geolocalización mediante la IP">
+    <meta name="author" content="Denardo Taco Sánchez">
+    <title>Geolocalización con IP</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <!-- Formulario -->
+      <h1 class="title">DATOS DE IP</h1>
+      <form id="form" class="form">
+        <label for="input" class="form__text">IP del usuario</label>
+        <!-- En el atributo pattern utilizamos un patrón que solo acepte direcciones IPv4 -->
+        <input type="text" id="input" class="form__input" placeholder="Introduce aquí la IP" pattern="^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$" required>
+        <small class="form__text">Por ejemplo: 192.228.17.57</small>
+        <button type="submit" class="form__button">Buscar información de IP</button>
+      </form>
+
+      <!-- Resultados -->
+      <section id="results" class="results">
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
