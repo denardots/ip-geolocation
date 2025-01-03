@@ -1,3 +1,5 @@
+"use strict";
+
 // Función asíncrona que realiza la petición a la API y obtiene un resultado
 const fetchApi = async () => {
   let ip = input.value;
